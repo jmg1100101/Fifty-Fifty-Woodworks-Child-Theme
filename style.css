@@ -11,5 +11,38 @@ Version: 1.0
 
 
 .header__color-scheme-toggle {
+  display: none;
+}
+
+.header__extras .header__cart-toggle .cart-contents::before {
+  content: "\f07a"!important;
+  font-family: "Font Awesome 6 Free"!important;
+  font-size: 1.3em!important;
+}
+
+[class^="skinny-icon-"], [class*=" skinny-icon-"] {
+  font-family: "Font Awesome 6 Free"!important;
+}
+
+.header__extras .header__search-toggle .search-toggle-icon::before {
+  content: "\f002"!important;
+  font-family: "Font Awesome 6 Free"!important;
+  font-size: 1.3em!important;
+  margin-right: 10px!important;
+}
+
+form[role="search"]:not(.search-form)::before, form[role="search"].search-form label::before {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  content: "\f002"!important;
+  font-family: "Font Awesome 6 Free"!important;
+  font-size: 1.1em;
+  color: var(--skinny--color-scheme-text);
+}
+
+@media (max-width: 959px) {
+  .header__mobile-navigation .quick-links {
     display: none;
+  }
 }
