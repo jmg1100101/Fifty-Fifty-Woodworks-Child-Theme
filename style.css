@@ -46,3 +46,11 @@ form[role="search"]:not(.search-form)::before, form[role="search"].search-form l
     display: none;
   }
 }
+
+body.page:not(.skinny-hide-page-title) .post-container .entry-header:not(.no-thumb) {
+  display: none;
+}
+
+.blog-header, .archive-header, .woocommerce .shop-header, .page .shop-header {
+  min-height: 200px!important;
+}
