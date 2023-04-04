@@ -22,3 +22,16 @@ endif;
 add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 
 // END ENQUEUE PARENT ACTION
+
+
+// BEGIN WOOCOMMERCE
+add_filter( 'gettext', 'change_woocommerce_return_to_shop_text', 20, 3 );
+
+function change_woocommerce_return_to_shop_text( $translated_text, $text, $domain ) {
+        switch ( $translated_text ) {
+            case 'Return to shop' :
+                $translated_text = __( 'Return to Gallery', 'woocommerce' );
+                break;
+        }
+    return $translated_text;
+}
