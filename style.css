@@ -54,3 +54,7 @@ body.page:not(.skinny-hide-page-title) .post-container .entry-header:not(.no-thu
 .blog-header, .archive-header, .woocommerce .shop-header, .page .shop-header {
   min-height: 200px!important;
 }
+
+.about-header, .contact-header {
+  font-size: 52px;
+}
