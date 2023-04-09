@@ -23,6 +23,10 @@ add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 
 // END ENQUEUE PARENT ACTION
 
+add_action('wp_footer', 'ff_add_mastodon_verification'); 
+function ff_add_mastodon_verification() { 
+    echo '<a rel="me" href="https://hachyderm.io/@jamigibbs" hidden>Mastodon</a>'; 
+}
 
 // BEGIN WOOCOMMERCE
 add_filter( 'gettext', 'change_woocommerce_return_to_shop_text', 20, 3 );
