@@ -35,3 +35,11 @@ function change_woocommerce_return_to_shop_text( $translated_text, $text, $domai
         }
     return $translated_text;
 }
+
+add_action( 'woocommerce_no_products_found', function(){
+    remove_action( 'woocommerce_no_products_found', 'wc_no_products_found', 10 );
+
+    $message = __( 'No gallery items were found.', 'woocommerce' );
+
+    echo '<p class="woocommerce-info">' . $message .'</p>';
+}, 9 );
