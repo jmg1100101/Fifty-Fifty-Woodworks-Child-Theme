@@ -58,3 +58,7 @@ body.page:not(.skinny-hide-page-title) .post-container .entry-header:not(.no-thu
 .about-header, .contact-header {
   font-size: 52px;
 }
+
+.woocommerce div.product .product_title {
+  font-size: 52px;
+}
