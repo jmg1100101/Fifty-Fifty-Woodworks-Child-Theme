@@ -62,3 +62,7 @@ body.page:not(.skinny-hide-page-title) .post-container .entry-header:not(.no-thu
 .woocommerce div.product .product_title {
   font-size: 52px;
 }
+
+.contact-form label span {
+  opacity: unset;
+}
